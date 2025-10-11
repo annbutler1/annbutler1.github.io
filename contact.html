@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles/hw2-styles.css">
+    <link rel="icon" href="Images/cclogo_small.svg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <img src="Images/cclogo_small_light.svg" alt="Logo" class="header-logo">
+            <div class="header-title">Capone Collective</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+    <main>
+  <section class="contact-section">
+    <h1>Contact Me</h1>
+    <p>
+      Please use the form below to directly message me. I will receive your inquiry by email.
+    </p>
+    <div class="contact-info">
+      <p><strong>Name:</strong> Ann C. Butler</p>
+      <p><strong>Email:</strong> <a href="mailto:abutler1@babson.edu">abutler1@babson.edu</a></p>
+    </div>
+    <form method="POST" action="https://oim.108122.xyz/form2">
+      <fieldset>
+        <legend>Your Information</legend>
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required placeholder="e.g. Ann">
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required placeholder="e.g. Butler">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="e.g. ann@example.com">
+
+        <label for="country">Country:</label>
+        <input list="country-list" id="country" name="country" required placeholder="Select or type country">
+        <datalist id="country-list">
+          <option value="United States">
+          <option value="Australia">
+          <option value="Canada">
+        </datalist>
+      </fieldset>
+
+      <fieldset>
+        <legend>Inquiry Details</legend>
+        <label for="purpose">Purpose of Inquiry:</label>
+        <select id="purpose" name="purpose" required>
+          <option value="">--Select--</option>
+          <option value="info">More Information</option>
+          <option value="meeting">Request a Meeting</option>
+          <option value="other">Other (please specify below)</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="6" required placeholder="Type your message here..."></textarea>
+      </fieldset>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</main>
+</body>
+</html>
